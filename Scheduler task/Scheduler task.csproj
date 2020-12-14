@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Logic\ScheduleTask.cs" />
+    <Compile Include="Pojo\FileInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\FileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
