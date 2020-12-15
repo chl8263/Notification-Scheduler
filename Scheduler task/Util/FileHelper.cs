@@ -4,7 +4,7 @@ using System.Text;
 using System.IO;
 using System.Collections.Generic;
 using System.Reflection;
-
+using Scheduler_task.Pojo;
 
 namespace Scheduler_task.Util {
     class FileHelper<T> {
@@ -15,15 +15,15 @@ namespace Scheduler_task.Util {
         private readonly string COMPLETE_ROOT_PATH = Properties.Settings.Default.CompleteRootpath;
         private readonly string currentShotDate = DateTime.Now.ToString("yyMM");
 
-        public FileInfo CreateCvsFileAtStage(List<T> itemList, string fileName) {
+        public CsvFileInfo CreateCvsFileAtStage(List<T> itemList, string fileName) {
 
-            var fileInfoVO = new FileInfo();
-            fileInfoVO.dataCount = itemList.Count;
+            var csvFileInfo = new CsvFileInfo();
+            csvFileInfo.dataCount = itemList.Count;
 
             if (itemList.Count == 0) {
-                fileInfoVO.filePath = FileInfo.nil;
-                fileInfoVO.fileName = fileName;
-                return fileInfoVO;
+                csvFileInfo.filePath = CsvFileInfo.nil;
+                csvFileInfo.fileName = fileName;
+                return csvFileInfo;
             }
 
             var pullPath = "";
