@@ -4,9 +4,10 @@ using System.Text;
 using System.IO;
 using System.Collections.Generic;
 using System.Reflection;
-using Scheduler_task.Pojo;
+using NotiScheduler.Const;
+using NotiScheduler.VO;
 
-namespace Scheduler_task.Util {
+namespace NotiScheduler.Helper {
     class FileHelper<T> {
 
         private readonly string CARRIAGE_RETURN = "\r\n";
@@ -15,15 +16,15 @@ namespace Scheduler_task.Util {
         private readonly string COMPLETE_ROOT_PATH = Properties.Settings.Default.CompleteRootpath;
         private readonly string currentShotDate = DateTime.Now.ToString("yyMM");
 
-        public CsvFileInfo CreateCvsFileAtStage(List<T> itemList, string fileName) {
+        public CreatedFileInfoVO CreateCvsFileAtStage(List<T> itemList, string fileName) {
 
-            var csvFileInfo = new CsvFileInfo();
-            csvFileInfo.dataCount = itemList.Count;
+            var fileInfoVO = new CreatedFileInfoVO();
+            fileInfoVO.dataCount = itemList.Count;
 
             if (itemList.Count == 0) {
-                csvFileInfo.filePath = CsvFileInfo.nil;
-                csvFileInfo.fileName = fileName;
-                return csvFileInfo;
+                fileInfoVO.filePath = CreatedFileInfoVO.nil;
+                fileInfoVO.fileName = fileName;
+                return fileInfoVO;
             }
 
             var pullPath = "";
@@ -103,7 +104,7 @@ namespace Scheduler_task.Util {
             return fileInfoVO;
         }
 
-        public void moveCompleteDirectory(CreatedFileInfoVO fileInfoVO) {
+        public void moveCompleteDirectory(CreatedFileInfoVO fileInfoVO){
 
             if (fileInfoVO.filePath == CreatedFileInfoVO.nil) return;
 

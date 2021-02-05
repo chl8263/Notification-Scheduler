@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NotiScheduler.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Rootpath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\prdwebapp-01\UniveraPrograms\Files\</Value>
+    </Setting>
+    <Setting Name="StageRootpath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\prdwebapp-01\UniveraPrograms\Files\Stage\Notifications</Value>
+    </Setting>
+    <Setting Name="CompleteRootpath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\prdwebapp-01\UniveraPrograms\Files\Complete\Notifications</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

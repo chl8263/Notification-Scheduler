@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
-namespace Scheduler_task.Pojo {
-    class FileInfo {
+namespace NotiScheduler.VO {
+    class CreatedFileInfoVO {
+
         public const string nil = "nil";
 
-        public FileInfo() {
+        public CreatedFileInfoVO() {
         }
 
-        public FileInfo(String fileName, String filePath, int dataCount) {
+        public CreatedFileInfoVO(String fileName, String filePath, int dataCount) {
             this.fileName = fileName;
             this.filePath = filePath;
             this.dataCount = dataCount;

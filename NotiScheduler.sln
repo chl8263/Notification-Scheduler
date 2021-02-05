@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotiScheduler", "NotiScheduler\NotiScheduler.csproj", "{D88E5731-1C9F-4EDA-AFA5-3A2DD85EBBE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D88E5731-1C9F-4EDA-AFA5-3A2DD85EBBE1}.Debug|x86.ActiveCfg = Debug|x86
+		{D88E5731-1C9F-4EDA-AFA5-3A2DD85EBBE1}.Debug|x86.Build.0 = Debug|x86
+		{D88E5731-1C9F-4EDA-AFA5-3A2DD85EBBE1}.Release|x86.ActiveCfg = Release|x86
+		{D88E5731-1C9F-4EDA-AFA5-3A2DD85EBBE1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10C57A2D-0647-486E-ADE6-C0209DA02C33}
+	EndGlobalSection
+EndGlobal
